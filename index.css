@@ -8,21 +8,58 @@ header {
 	height:50px;
 	background:#c5464a;
 	}
+.title{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.titlelable{
+	width:160px;
+	text-align:center;
+}
+.projecttitle{
+	width:800px;
+	line-height:50px;
+	color:#f1f0ff;font-size:24px;
+	cursor:pointer;
+	font-family: "Georgia";
+	text-align:center;
+	padding:5px;
+}
 .secondheader{
-	height:500px;
+	min-height: 450px;
 	background:#30d0d0;
 	font-size:18px;
+	overflow: auto;
 }
 .people{
 	font-size:20px;
 	font-style:italic;
+	text-align:center;
+	padding:3px;
+}
+#tab1{
+	display : block;
+}
+#tab2{
+	display:none;
+}
+#tab3{
+	display:none;
+}
+#tab4{
+	display:none;
+}
+#tab5{
+	display:none;
 }
 #architecture{
-	width: 567px;
-    height: 195px;
+	width: 800px;
+    height: 275px;
 }
 .introdiv{
 	margin-left:auto;
+	padding-bottom:3px;
 }
 section{
 	margin:0 auto;
@@ -197,4 +234,4 @@ li img.show{
 
 
 @media screen and (max-width: 620px) {section{width:96%;padding:0 2%;}}
-@media screen and (min-width: 620px) {section{width:600px;padding:0 10px;}}
+@media screen and (min-width: 620px) {section{width:800px;padding:0 10px;}}
