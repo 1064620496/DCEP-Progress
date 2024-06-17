@@ -1,6 +1,6 @@
 "use strict"; 
 var eventlist=["Research and select cryptographic algorithms.","Design and implement the underlying algorithms of DCEP.","Build the initial system.","Android app client development.","Back-end framework development.","Internal management web development.","Functional testing","Security testing"];
-var finishlist=[1,1,1,0,1,0,0,0];
+var finishlist=[1,1,1,1,1,1,0,0];
 var ddllist=["13-Apr-24","4-May-24","1-Jun-24","22-Jun-24","22-Jun-24","22-Jun-24","13-Jul-24","13-Jul-24"]
 var longClick;var timeOutEvent;
 var itemnum=0;var finishnum=0;
