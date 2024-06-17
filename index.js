@@ -430,3 +430,69 @@ function selectall()
 	}
 	update();
 }
+
+function clickTab1()
+{
+	var tab1=document.querySelector("#tab1")
+	tab1.style.display="block"
+	var tab2=document.querySelector("#tab2")
+	tab2.style.display="none"
+	var tab3=document.querySelector("#tab3")
+	tab3.style.display="none"
+	var tab4=document.querySelector("#tab4")
+	tab4.style.display="none"
+	var tab5=document.querySelector("#tab5")
+	tab5.style.display="none"
+}
+function clickTab2()
+{
+	var tab1=document.querySelector("#tab1")
+	tab1.style.display="none"
+	var tab2=document.querySelector("#tab2")
+	tab2.style.display="block"
+	var tab3=document.querySelector("#tab3")
+	tab3.style.display="none"
+	var tab4=document.querySelector("#tab4")
+	tab4.style.display="none"
+	var tab5=document.querySelector("#tab5")
+	tab5.style.display="none"
+}
+function clickTab3()
+{
+	var tab1=document.querySelector("#tab1")
+	tab1.style.display="none"
+	var tab2=document.querySelector("#tab2")
+	tab2.style.display="none"
+	var tab3=document.querySelector("#tab3")
+	tab3.style.display="block"
+	var tab4=document.querySelector("#tab4")
+	tab4.style.display="none"
+	var tab5=document.querySelector("#tab5")
+	tab5.style.display="none"
+}
+function clickTab4()
+{
+	var tab1=document.querySelector("#tab1")
+	tab1.style.display="none"
+	var tab2=document.querySelector("#tab2")
+	tab2.style.display="none"
+	var tab3=document.querySelector("#tab3")
+	tab3.style.display="none"
+	var tab4=document.querySelector("#tab4")
+	tab4.style.display="block"
+	var tab5=document.querySelector("#tab5")
+	tab5.style.display="none"
+}
+function clickTab5()
+{
+	var tab1=document.querySelector("#tab1")
+	tab1.style.display="none"
+	var tab2=document.querySelector("#tab2")
+	tab2.style.display="none"
+	var tab3=document.querySelector("#tab3")
+	tab3.style.display="none"
+	var tab4=document.querySelector("#tab4")
+	tab4.style.display="none"
+	var tab5=document.querySelector("#tab5")
+	tab5.style.display="block"
+}
