@@ -1,11 +1,12 @@
 "use strict"; 
 var eventlist=["Research and select cryptographic algorithms.","Design and implement the underlying algorithms of DCEP.","Build the initial system.","Android app client development.","Back-end framework development.","Internal management web development.","Functional testing","Security testing"];
-var finishlist=[1,1,1,1,1,1,0,0];
+var finishlist=[1,1,1,1,1,1,1,1];
 var ddllist=["13-Apr-24","4-May-24","1-Jun-24","22-Jun-24","22-Jun-24","22-Jun-24","13-Jul-24","13-Jul-24"]
 var longClick;var timeOutEvent;
 var itemnum=0;var finishnum=0;
 var view="all";
 var content;var recordi=0;
+
 //关闭或刷新时数据保存到本地
 /*function leave()
 {
@@ -123,8 +124,14 @@ window.onload = function() {
 		{
 			lefts[i].addEventListener("click",changeview(i),false);
 		}
-    
-    
+		
+    var defaultTitle=document.querySelector("#title1")
+	defaultTitle.style.color="#000000"
+	var defaultsec=document.querySelector("#small1")
+	defaultsec.style.backgroundColor="#da6296"
+	var defaultright=document.querySelector("#smr1")
+	defaultright.style.display="block"
+
 }
 function update()
 {
@@ -431,8 +438,74 @@ function selectall()
 	update();
 }
 
-function clickTab1()
+function clicksec(e){
+	var sec1=document.querySelector("#small1")
+	var sec2=document.querySelector("#small2")
+	var sec3=document.querySelector("#small3")
+	var sec4=document.querySelector("#small4")
+	var sec5=document.querySelector("#small5")
+	var sec6=document.querySelector("#small6")
+	var right1=document.querySelector("#smr1")
+	var right2=document.querySelector("#smr2")
+	var right3=document.querySelector("#smr3")
+	var right4=document.querySelector("#smr4")
+	var right5=document.querySelector("#smr5")
+	var right6=document.querySelector("#smr6")
+	if(sec1===e){
+		sec1.style.backgroundColor="#da6296"
+		right1.style.display="block"
+	}else{
+		sec1.style.backgroundColor="#91f0bb"
+		right1.style.display="none"
+	}
+	if(sec2===e){
+		sec2.style.backgroundColor="#da6296"
+		right2.style.display="block"
+	}else{
+		sec2.style.backgroundColor="#91f0bb"
+		right2.style.display="none"
+	}
+	if(sec3===e){
+		sec3.style.backgroundColor="#da6296"
+		right3.style.display="block"
+	}else{
+		sec3.style.backgroundColor="#91f0bb"
+		right3.style.display="none"
+	}
+	if(sec4===e){
+		sec4.style.backgroundColor="#da6296"
+		right4.style.display="block"
+	}else{
+		sec4.style.backgroundColor="#91f0bb"
+		right4.style.display="none"
+	}
+	if(sec5===e){
+		sec5.style.backgroundColor="#da6296"
+		right5.style.display="block"
+	}else{
+		sec5.style.backgroundColor="#91f0bb"
+		right5.style.display="none"
+	}
+	if(sec6===e){
+		sec6.style.backgroundColor="#da6296"
+		right6.style.display="block"
+	}else{
+		sec6.style.backgroundColor="#91f0bb"
+		right6.style.display="none"
+	}
+}
+
+function clickTab1(e)
 {
+	e.style.color="#000000"
+	var title2=document.querySelector("#title2")
+	title2.style.color="#f1f0ff"
+	var title3=document.querySelector("#title3")
+	title3.style.color="#f1f0ff"
+	var title4=document.querySelector("#title4")
+	title4.style.color="#f1f0ff"
+	var title5=document.querySelector("#title5")
+	title5.style.color="#f1f0ff"
 	var tab1=document.querySelector("#tab1")
 	tab1.style.display="block"
 	var tab2=document.querySelector("#tab2")
@@ -444,8 +517,17 @@ function clickTab1()
 	var tab5=document.querySelector("#tab5")
 	tab5.style.display="none"
 }
-function clickTab2()
+function clickTab2(e)
 {
+	e.style.color="#000000"
+	var title1=document.querySelector("#title1")
+	title1.style.color="#f1f0ff"
+	var title3=document.querySelector("#title3")
+	title3.style.color="#f1f0ff"
+	var title4=document.querySelector("#title4")
+	title4.style.color="#f1f0ff"
+	var title5=document.querySelector("#title5")
+	title5.style.color="#f1f0ff"
 	var tab1=document.querySelector("#tab1")
 	tab1.style.display="none"
 	var tab2=document.querySelector("#tab2")
@@ -457,8 +539,17 @@ function clickTab2()
 	var tab5=document.querySelector("#tab5")
 	tab5.style.display="none"
 }
-function clickTab3()
+function clickTab3(e)
 {
+	e.style.color="#000000"
+	var title1=document.querySelector("#title1")
+	title1.style.color="#f1f0ff"
+	var title2=document.querySelector("#title2")
+	title2.style.color="#f1f0ff"
+	var title4=document.querySelector("#title4")
+	title4.style.color="#f1f0ff"
+	var title5=document.querySelector("#title5")
+	title5.style.color="#f1f0ff"
 	var tab1=document.querySelector("#tab1")
 	tab1.style.display="none"
 	var tab2=document.querySelector("#tab2")
@@ -470,8 +561,17 @@ function clickTab3()
 	var tab5=document.querySelector("#tab5")
 	tab5.style.display="none"
 }
-function clickTab4()
+function clickTab4(e)
 {
+	e.style.color="#000000"
+	var title1=document.querySelector("#title1")
+	title1.style.color="#f1f0ff"
+	var title2=document.querySelector("#title2")
+	title2.style.color="#f1f0ff"
+	var title3=document.querySelector("#title3")
+	title3.style.color="#f1f0ff"
+	var title5=document.querySelector("#title5")
+	title5.style.color="#f1f0ff"
 	var tab1=document.querySelector("#tab1")
 	tab1.style.display="none"
 	var tab2=document.querySelector("#tab2")
@@ -483,8 +583,17 @@ function clickTab4()
 	var tab5=document.querySelector("#tab5")
 	tab5.style.display="none"
 }
-function clickTab5()
+function clickTab5(e)
 {
+	e.style.color="#000000"
+	var title1=document.querySelector("#title1")
+	title1.style.color="#f1f0ff"
+	var title2=document.querySelector("#title2")
+	title2.style.color="#f1f0ff"
+	var title3=document.querySelector("#title3")
+	title3.style.color="#f1f0ff"
+	var title4=document.querySelector("#title4")
+	title4.style.color="#f1f0ff"
 	var tab1=document.querySelector("#tab1")
 	tab1.style.display="none"
 	var tab2=document.querySelector("#tab2")
