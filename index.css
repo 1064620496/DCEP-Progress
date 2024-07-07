@@ -26,12 +26,22 @@ header {
 	text-align:center;
 	padding:5px;
 }
+.conclusionsection{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.ccp{
+	padding-top:30px;
+	font-size:20px;
+}
 .secondheader{
 	min-height: 450px;
 	background:#30d0d0;
 	font-size:18px;
 	overflow: auto;
 }
+
 .people{
 	font-size:20px;
 	font-style:italic;
@@ -53,9 +63,158 @@ header {
 #tab5{
 	display:none;
 }
+#sectionMethod{
+	height:450px;
+	display:flex;
+	flex-direction: row;
+}
+#smlt{
+	width:200px;
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
+}
+#smr{
+	width:600px;
+	Overflow:auto;
+}
+#smr1{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 30px;
+}
+#smr2{
+
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#smr3{
+
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 30px;
+}
+#smr4{
+	height:440px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+#smr5{
+	height:420px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 30px;
+}
+#smr6{
+	height:420px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 30px;
+}
+#smr4c{
+	width:580px;
+	height:440px;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#smr4l{
+	width:200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#lll{
+	word-wrap: break-word; 
+}
+#smr4r{
+	width:380px;
+}
+#repng{
+	padding-top:30px;
+	height:300px;
+}
+.rec{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#dipng{
+	padding-top: 15px;
+	height: 280px;
+}
+#webpng{
+	padding-top: 30px;
+    height: 280px;
+}
+#classpng{
+	padding-top: 30px;
+    height: 190px;
+}
+#erpng{
+	padding-top: 30px;
+    height: 260px;
+}
+#paymentpng{
+	padding-top: 30px;
+    height: 200px;
+}
+.passage{
+	word-wrap: break-word; 
+}
+.passage2{
+	width:560px;
+	word-wrap: break-word; 
+	padding-bottom:20px;
+}
+
+.paymentdes{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.destitle{
+	padding: 10px;
+	text-align: center;
+}
+.smrc{
+	display:none
+}
+.smallborder{
+	border: 3px solid #887277;
+	border-radius:5px;
+	text-align: center;
+	background-color:#91f0bb;
+	margin-bottom: 30px;
+	padding: 5px;
+}
 #architecture{
 	width: 800px;
     height: 275px;
+}
+#modulepng{
+    height: 150px;
+
+}
+.moduledes{
+	text-align: center;
+	padding-bottom: 30px;
+}
+#architecturepng{
+	padding-left: 25px;
+    height: 190px;
+}
+.architecturedes{
+	text-align: center;
+	padding-bottom: 30px;
+}
+#functionpng{
+	padding-left: 25px;
+    height: 190px;
+}
+.functiondes{
+	text-align: center;
+	padding-bottom: 30px;
 }
 .introdiv{
 	margin-left:auto;
