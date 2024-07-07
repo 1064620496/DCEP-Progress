@@ -12,11 +12,11 @@
 	<body>
 		<header>
 			<section class="title">
-				<label class="titlelable" onclick="clickTab1()">Overview</label>
-				<label class="titlelable" onclick="clickTab2()">Methodology</label>
-				<label class="titlelable" onclick="clickTab3()">Results</label>
-				<label class="titlelable" onclick="clickTab4()">Discussions</label>
-				<label class="titlelable" onclick="clickTab5()">Conclusion</label>
+				<label class="titlelable" id="title1" onclick="clickTab1(this)">Overview</label>
+				<label class="titlelable" id="title2" onclick="clickTab2(this)">Methodology</label>
+				<label class="titlelable" id="title3" onclick="clickTab3(this)">Results</label>
+				<label class="titlelable" id="title4" onclick="clickTab4(this)">Discussions</label>
+				<label class="titlelable" id="title5" onclick="clickTab5(this)">Conclusion</label>
 			</section>
 		</header>
 		<header class="secondheader" id="tab1">
@@ -34,22 +34,169 @@
 		</header>
 		<header class="secondheader" id="tab2">
 			<section class="secondsection">
-				<div>Methodology is to be continued.</div>
+				<div id="sectionMethod">
+					<div id="smlt">
+						<div class="smallborder" id="small1" onclick="clicksec(this)">System architecture</div>
+						<div class="smallborder" id="small2" onclick="clicksec(this)">Cryptographic algorithms</div>
+						<div class="smallborder" id="small3" onclick="clicksec(this)">Backend framework</div>
+						<div class="smallborder" id="small4" onclick="clicksec(this)">Mobile application</div>
+						<div class="smallborder" id="small5" onclick="clicksec(this)">Monitoring website</div>
+						<div class="smallborder" id="small6" onclick="clicksec(this)">Software testing</div>
+					</div>
+					<div id="smr">
+						<div id="smr1" class="smrc">
+							<div class="passage2">
+								Since we hope to build the DCEP system, which is usually used for public transferring and consuming, we want to divide it into three modules, that is, mobile
+application, back-end framework and monitoring website.
+							</div>
+							<img id="modulepng" src="module.png">
+							<div class="moduledes">
+								System modules
+							</div>
+							<div class="passage2">
+								we need to use many techniques to support the system. 
+							</div>
+							<img id="architecturepng" src="System technical architecture.png">
+							<div class="architecturedes">
+								Technical architecture
+							</div>
+							<div class="passage2"> With the help of these techniques, the functional modules jointly enable functions like authorization, transfer, privacy
+								protection, and data monitoring.</div>
+							<img id="functionpng" src="System function architecture.png">
+							<div class="functiondes">
+								Functional architecture
+							</div>
+						</div>
+						<div id="smr2" class="smrc">
+							<div class="destitle">Blind Schnorr Signature</div>
+							<div class="passage">
+								Blind signature is a cryptographic technique used in digital cash systems to provide anonymity to the user. In a blind signature scheme, the user's digital cash is first encrypted using a random key. The encrypted digital cash is then sent to the bank, which signs it without being able to see the contents of the message. 
+								We have implemented blind schnorr signature in java based on bip340: a
+schnorr signature standard used in bitcoin, and a method used to modify sig-
+nature to blind signature. 
+							</div>
+							<img id="paymentpng" src="payment scenario.png">
+							<div class="paymentdes">
+								Blind signature scheme integration
+							</div>
+							<div class="destitle">Blind RSA Signature</div>
+							<div class="passage">
+								Similarly, we have implemented blind RSA signature in java, and the key length
+is 2048 bit.
+							</div>
+							<div class="destitle">Group Signature</div>
+							<div class="passage">
+								We have implemented group signature in java.
+								The process is described as follows. First, the Group Manager selects a set of parameters and then generates both the user's private key and the group's private key. Once the user receives their private key, they are able to generate a signature. Subsequently, the verifier can recalculate the hash value to verify this signature.
+ 
+							</div>
+						</div>
+						<div id="smr3" class="smrc">
+							<div class="passage">
+								Back-end framework is the most important part of our DCEP system, since it
+is responsible for accepting the requests from the users and give them correct
+responses when the system performing login, transfer functions and so on.
+We use spring boot and JPA to realize the Controller, Service, Repository or DAO
+and Model layer. And we use mysql to build and manage the database, which
+is connected to the spring boot.
+Since we use JAVA language, it helpful for us to implement some cryptographic algorithms. The class diagram and ER diagram are shown below.
+							</div>
+							<img id="classpng" src="class diagram.png">
+							<div class="moduledes">
+								Class diagram
+							</div>
+							<img id="erpng" src="erdiagram.png">
+							<div class="moduledes">
+								ER diagram
+							</div>
+						</div>
+						<div id="smr4" class="smrc">
+							<div id="smr4c">
+								<div id="smr4l">
+									<div>
+										
+									</div id="lll">
+									We have built an application that can mainly be use to make anonymous
+	transfers and buy some virtual products. Of course, users can check their account and withdraw or recharge some anonymous money.
+									<div>
+																		
+									</div>
+								</div>
+								<div id="smr4r">
+									<video width="300" height="430" controls>
+										<source src="android.mp4" type="video/mp4">
+										
+									  </video>
+								</div>
+							</div>
+						</div>
+						<div id="smr5" class="smrc">
+							<div>
+								Monitoring website is a supplement to the DCEP system, which is used for
+internal monitoring and management of all user, account, and transaction information. We need to visualize and analyze data in the form of some figures
+and tables in the website.
+The website design is illustrated as follows.
+							</div>
+							<img id="webpng" src="website design.png">
+							<div class="moduledes">
+								Website design
+							</div>
+						</div>
+						<div id="smr6" class="smrc">
+							<div>
+								Software testing has played a positive role in our development process, helping
+					us avoid many errors. We conducted the following kinds of testing to ensure the
+					correctness and stability of the system.
+							</div>
+							<div class="destitle">Unit testing</div>
+							<div class="passage">
+								In our development process, unit testing is mainly used in the development of
+cryptographic algorithm functions(signing and verification) and some backend
+tool functions(password checking). We mainly focus on check the consitency of
+the input and output, and we use the method of equivalence class partitioning
+to design test cases.
+							</div>
+							<div class="destitle">System Testing
+							</div>
+							<div class="passage">
+								Since we have finished the back-end framework and the android client, we
+basically complete the entire system so we conduct functional and performance
+testing to verify the system.
+							</div>
+					</div>
+				</div>
 			</section>
 		</header>
 		<header class="secondheader" id="tab3">
 			<section class="secondsection">
-				<div>Results are to be continued.</div>
+				<div class="ccp">
+					We have calculated the average execution time for key generation, signing, and verification of three cryptographic schemes on mainstream PCs, and the results are shown in the graph below.
+					More experimental results will be presented in the paper.
+				</div>
+				<div class="rec">
+				<img id="repng" src="result.png">
+				</div>
 			</section>
 		</header>
 		<header class="secondheader" id="tab4">
 			<section class="secondsection">
-				<div>Disscusions are to be continued.</div>
-			</section>
+				<div class="ccp">How to express digital currencies with different amounts?(One of discussions on our paper)</div>
+				<div class="ccp">In our system, some amounts can be represented with a blind signature, and
+					we need a trusted third party to give change if we want to pay a digital currency
+					worth N dollars for a product worth M(N ≤ M) dollars. The detail is shown in the below picture.</div>
+					<img id="dipng" src="division.png">
+				</section>
 		</header>
 		<header class="secondheader" id="tab5">
-			<section class="secondsection">
-				<div>Conclusion is to be continued.</div>
+			<section class="conclusionsection">
+				<div class="ccp">We are thrilled to announce the successful completion of our project, which has resulted in the development of an <strong> Android application </strong> that enables users to pay or transfer funds without revealing their personal information. This innovative solution provides a secure and anonymous method of conducting transactions, offering users the peace of mind that their financial information is protected.
+				</div>
+				<div class="ccp">
+					Furthermore, our team has implemented <strong> three different cryptographic schemes</strong>  that are integrated into our application to further enhance security and privacy. With these schemes in place, users can be confident that their transactions are protected by the most advanced encryption methods available.
+				</div>
+				<div class="ccp">
+					Overall, we are proud of the results of our project and believe that it has the potential to revolutionize the way people conduct digital transactions. We look forward to continuing to refine and improve our application in the future to ensure that it meets the evolving needs of our users.
+				</div>
 			</section>
 		</header>
 		<header>
