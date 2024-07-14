@@ -105,6 +105,7 @@ window.onload = function() {
 	document.querySelector("html").addEventListener("click",bodyclick,false)
 	document.getElementById("selectall").addEventListener("click",selectall,false);
 	update();
+	document.querySelector(".loadercontainer").style.display="none";
 	/*var addtodo=document.querySelector("#addtodo")
 	addtodo.addEventListener('keyup', function(ev) {
     // Enter
