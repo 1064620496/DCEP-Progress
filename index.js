@@ -132,6 +132,8 @@ window.onload = function() {
 	defaultsec.style.backgroundColor="#da6296"
 	var defaultright=document.querySelector("#smr1")
 	defaultright.style.display="block"
+	var defaultcon=document.querySelector("#con1")
+	defaultcon.style.backgroundColor="#da6296"
 
 }
 function update()
@@ -493,6 +495,26 @@ function clicksec(e){
 	}else{
 		sec6.style.backgroundColor="#91f0bb"
 		right6.style.display="none"
+	}
+}
+function clickcon(e){
+	var sec1=document.querySelector("#con1")
+	var sec2=document.querySelector("#con2")
+	var right1=document.querySelector("#conp1")
+	var right2=document.querySelector("#conp2")
+	if(sec1===e){
+		sec1.style.backgroundColor="#da6296"
+		right1.style.display="block"
+	}else{
+		sec1.style.backgroundColor="#91f0bb"
+		right1.style.display="none"
+	}
+	if(sec2===e){
+		sec2.style.backgroundColor="#da6296"
+		right2.style.display="block"
+	}else{
+		sec2.style.backgroundColor="#91f0bb"
+		right2.style.display="none"
 	}
 }
 
