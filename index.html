@@ -22,7 +22,7 @@
 		<header class="secondheader" id="tab1">
 			<section class="secondsection">
 				<div class="projecttitle">Capstone project: DCEP</div>
-				<div class="people">Group member:Luo tianyuan, Shen Yixuan, Feng Xiangdi, Cao Tianming.</div>
+				<div class="people">Group member:Luo tianyuan, Shen Yixuan, Feng Xiangdi, Cao Tianming, Liu Xiangkun.</div>
 				<div class="people"> Mentor:Vivien</div>
 				<div class="introdiv">
 					Our project aims to build a secure and privacy-preserving digital currency electronic payment system named DCEP, which is the former
@@ -88,7 +88,23 @@ is 2048 bit.
 							<div class="passage">
 								We have implemented group signature in java.
 								The process is described as follows. First, the Group Manager selects a set of parameters and then generates both the user's private key and the group's private key. Once the user receives their private key, they are able to generate a signature. Subsequently, the verifier can recalculate the hash value to verify this signature.
- 
+							</div>
+							<div id="gpcontainer">
+							<img id="groupprocess" src="groupprocess.png">
+							</div>
+							<div class="paymentdes2">
+								Group signature functions
+							</div>
+							<div id="gpcontainer">
+								<img id="groupprocess2" src="group2.png">
+							</div>
+							<div class="paymentdes">
+								Group signature process
+							</div>
+							<div class="destitle">Group CT</div>
+							
+							<div class="passage">
+								Recognizing the distinct functionalities and respective advantages of Blind Signatures and Group Signatures in privacy protection, and drawing inspiration from the design concepts of Ring Confidential Transactions (Ring CT), we have proposed the Group CT scheme. This scheme substitutes the signing content of traditional group signatures with a series of serial numbers for transactions being prepared. Moreover, as our design revolves around a centralized CBDC, users are required to place their trust in the issuing bank initially. Thus, the bank can act as a third party, leveraging the benefits of blind signatures effectively. For a detailed description of the scheme, please refer to our paper.
 							</div>
 						</div>
 						<div id="smr3" class="smrc">
@@ -189,13 +205,57 @@ testing to verify the system.
 		</header>
 		<header class="secondheader" id="tab5">
 			<section class="conclusionsection">
-				<div class="ccp">We are thrilled to announce the successful completion of our project, which has resulted in the development of an <strong> Android application </strong> that enables users to pay or transfer funds without revealing their personal information. This innovative solution provides a secure and anonymous method of conducting transactions, offering users the peace of mind that their financial information is protected.
+				<div id="conp1">
+					<div class="ccp">We are thrilled to announce the successful completion of our project, which has resulted in the development of an <strong> Android application </strong> that enables users to pay or transfer funds without revealing their personal information. This innovative solution provides a secure and anonymous method of conducting transactions, offering users the peace of mind that their financial information is protected.
+					</div>
+					<div class="ccp">
+						Furthermore, our team has implemented <strong> three different cryptographic schemes</strong>  that are integrated into our application and has designed a <strong>new Group CT (Confidential Transaction) </strong>scheme to further enhance security and adapt to the privacy needs of different transaction scenarios. With these schemes in place, users can be confident that their transactions are protected by the most advanced encryption methods available. 
+					</div>
+					<div class="ccp">
+						Overall, we are proud of the results of our project and believe that it has the potential to revolutionize the way people conduct digital transactions. We look forward to continuing to refine and improve our application in the future to ensure that it meets the evolving needs of our users.
+					</div>
 				</div>
-				<div class="ccp">
-					Furthermore, our team has implemented <strong> three different cryptographic schemes</strong>  that are integrated into our application to further enhance security and privacy. With these schemes in place, users can be confident that their transactions are protected by the most advanced encryption methods available.
+				<div id="conp2">
+					<div class="destitle">Data and Scenario</div>
+					<div class="passage">
+						<strong>Enhanced Comparative Analysis</strong>: Collect and analyze more detailed data on CBDC
+applications from various countries to understand diverse transaction scenarios and refine
+application design accordingly.
+					</div>
+					<div class="passage">
+					<strong>Alignment with Real-world Usage</strong>: Adjust application features to better match the actual
+transaction scenarios, ensuring the app's relevance and usability in real-world settings.
+					</div>
+					<div class="destitle">Implementation</div>
+					<div class="passage">
+						<strong>Security Enhancements</strong>: Improve cryptographic processes by addressing current simplifications in random
+						sequence generation and online verification.
+					</div>
+					<div class="passage">
+					<strong>Resource Evaluation</strong>: Conduct comprehensive testing on large servers to evaluate power consumption and
+					response behaviors, identifying potential anomalies in transaction processing.
+					</div>
+					<div class="destitle">Architectural Design</div>
+					<div class="passage">
+						<strong>Cryptographic Scheme Transition</strong>: Transition from cryptographic schemes based on multiplicative cyclic groups to more
+						secure and efficient elliptic curve cryptography.					
+					</div>
+					<div class="passage">
+					<strong>Quantum Resistant Techniques</strong>: Integrate lattice-based cryptographic methods to prepare for future quantum
+					computing threats, enhancing the overall resilience of the system.
+					</div>
+					<div class="passage">
+						<strong>Scalability and System Performance</strong>: Expand dual offline payment functionalities to efficiently handle large volumes of
+						concurrent transaction requests.				
+					</div>
+					<div class="passage">
+					<strong>Pseudo-random Number Generation</strong>: Implement an efficient and secure pseudo-random number generator to ensure high
+					unpredictability and uniform distribution in cryptographic operations.
+					</div>
 				</div>
-				<div class="ccp">
-					Overall, we are proud of the results of our project and believe that it has the potential to revolutionize the way people conduct digital transactions. We look forward to continuing to refine and improve our application in the future to ensure that it meets the evolving needs of our users.
+				<div id="smlt2">
+					<div class="smallborder2 conpad" id="con1" onclick="clickcon(this)">Achievements</div>
+					<div class="smallborder2" id="con2" onclick="clickcon(this)">Future work</div>
 				</div>
 			</section>
 		</header>
