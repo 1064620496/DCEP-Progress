@@ -32,8 +32,17 @@ header {
 	justify-content: center;
 }
 .ccp{
-	padding-top:30px;
+	padding-top:20px;
 	font-size:20px;
+}
+#conp1{
+	overflow: auto;
+	height:370px;
+}
+#conp2{
+	overflow: auto;
+	height: 370px;
+	display: none;
 }
 .secondheader{
 	min-height: 450px;
@@ -73,6 +82,12 @@ header {
 	display:flex;
 	justify-content:center;
 	flex-direction: column;
+}
+#smlt2{
+	padding-top: 10px;
+	display:flex;
+	justify-content:center;
+	flex-direction: row;
 }
 #smr{
 	width:600px;
@@ -160,6 +175,18 @@ header {
 	padding-top: 30px;
     height: 200px;
 }
+#groupprocess{
+    height: 200px;
+}
+#groupprocess2{
+    height: 200px;
+}
+#gpcontainer{
+	padding-top: 15px;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+}
 .passage{
 	word-wrap: break-word; 
 }
@@ -172,6 +199,9 @@ header {
 .paymentdes{
 	text-align: center;
 	padding-bottom: 30px;
+}
+.paymentdes2{
+	text-align: center;
 }
 .destitle{
 	padding: 10px;
@@ -187,6 +217,16 @@ header {
 	background-color:#91f0bb;
 	margin-bottom: 30px;
 	padding: 5px;
+}
+.smallborder2{
+	border: 3px solid #887277;
+	border-radius:5px;
+	text-align: center;
+	background-color:#91f0bb;
+	padding: 5px;
+}
+.conpad{
+	margin-right: 20px;
 }
 #architecture{
 	width: 800px;
